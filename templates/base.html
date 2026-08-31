@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Swarnadip Guitar Academy</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+<a
+    href="https://wa.me/919064195827"
+    class="whatsapp-float"
+    target="_blank"
+>
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<body>
+    
+    <!-- Navbar -->
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="/">🎸 Swarnadip Guitar Academy</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/performances">Performances</a></li>
+            <li><a href="/contact">Contact</a></li>
+            
+        </ul>
+
+    </nav>
+
+</header>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>Swarnadip Guitar Academy</h3>
+
+        <p>
+            Professional Guitar Training in Katwa.
+            Learn from a Rabindra Bharati University Graduate with
+            10+ years of performance experience.
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/sarnadip_guitar" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/share/1DU83DqXuH/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://wa.me/919064195827" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <p>
+            📍 Katwa, West Bengal
+        </p>
+
+        <p>
+            📞 +91 90641 95827
+        </p>
+
+        <p class="copyright">
+            © 2026 Swarnadip Guitar Academy
+        </p>
+        <a href="/login" class="footer-admin">
+        Admin Login
+    </a>
+
+    </div>
+
+</footer>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

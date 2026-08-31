@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section style="padding-top:120px;">
+
+    <h1 class="section-title">
+        Gallery
+    </h1>
+
+    <p class="section-subtitle">
+        Performances, teaching sessions, workshops, and memorable moments.
+    </p>
+
+</section>
+
+<section>
+
+    <div class="gallery-grid">
+
+        <img src="{{ url_for('static', filename='images/gallery/gallery1.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='images/gallery/gallery2.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='images/gallery/gallery3.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='images/gallery/gallery4.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='images/gallery/gallery5.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='images/gallery/gallery6.jpg') }}" alt="">
+
+    </div>
+
+</section>
+
+{% endblock %}

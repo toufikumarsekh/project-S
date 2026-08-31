@@ -1,0 +1,632 @@
+/* =========================
+   SWARNADIP GUITAR ACADEMY
+   PROFESSIONAL DARK THEME
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo a{
+    color:#f59e0b;
+    text-decoration:none;
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#f59e0b;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#f59e0b;
+    color:#111827;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(245,158,11,0.35);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #f59e0b;
+    color:#f59e0b;
+}
+
+.btn-outline:hover{
+    background:#f59e0b;
+    color:#111827;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(15,23,42,0.85)
+    ),
+    url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* =========================
+   SECTION COMMON
+========================= */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:60px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.stat-card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h2{
+    color:#f59e0b;
+    font-size:2.8rem;
+}
+
+.stat-card p{
+    color:#cbd5e1;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+/* =========================
+   COURSE CARDS
+========================= */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:35px;
+    transition:0.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+    border:1px solid #f59e0b;
+}
+
+.course-card h3{
+    color:#f59e0b;
+    margin-bottom:15px;
+}
+
+.course-card ul{
+    list-style:none;
+}
+
+.course-card li{
+    margin-bottom:10px;
+    color:#cbd5e1;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.feature-card i{
+    font-size:3rem;
+    color:#f59e0b;
+    margin-bottom:20px;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+}
+
+.testimonial-card p{
+    color:#cbd5e1;
+}
+
+.testimonial-card h4{
+    margin-top:20px;
+    color:#f59e0b;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-form{
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:#fff;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:150px;
+}
+
+.contact-info{
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+}
+
+.contact-info h3{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    color:#cbd5e1;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta{
+    text-align:center;
+    background:#1e293b;
+    border-radius:30px;
+    margin:50px 8%;
+    padding:70px 30px;
+}
+
+.cta h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#020617;
+    padding:60px 20px;
+    text-align:center;
+    margin-top:80px;
+}
+
+.footer h3{
+    color:#f59e0b;
+    margin-bottom:20px;
+}
+
+.footer p{
+    color:#94a3b8;
+    max-width:700px;
+    margin:auto;
+}
+
+.social-links{
+    margin:25px 0;
+}
+
+.social-links a{
+    color:#f59e0b;
+    font-size:1.8rem;
+    margin:0 12px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    transform:translateY(-5px);
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .about,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .btn{
+        width:100%;
+        max-width:280px;
+    }
+}
+.contact-form button{
+    border:none;
+    cursor:pointer;
+}
+
+.contact-info a:hover{
+    opacity:0.9;
+}
+
+
+/* WHATSAPP FLOAT */
+
+.whatsapp-float{
+    position:fixed;
+    width:65px;
+    height:65px;
+    bottom:25px;
+    right:25px;
+
+    background:#25D366;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:2rem;
+
+    z-index:9999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+.course-card,
+.feature-card,
+.stat-card,
+.testimonial-card{
+    transition:0.4s;
+}
+
+.course-card:hover,
+.feature-card:hover,
+.stat-card:hover,
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    gap:5px;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:#ffffff;
+    border-radius:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .navbar{
+        position:relative;
+        flex-direction:row;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:#0f172a;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:20px 0;
+
+        display:none;
+
+        border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:12px 0;
+    }
+
+    .navbar .btn{
+        display:none;
+    }
+}
+.footer-admin{
+    color:#777;
+    font-size:13px;
+    text-decoration:none;
+}
+
+.footer-admin:hover{
+    color:#f59e0b;
+}
+
+
+
+
+
+
+body{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.8),
+            rgba(0,0,0,0.8)
+        ),
+        url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
