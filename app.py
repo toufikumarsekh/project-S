@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+import os
 
 from models.inquiry import db, Inquiry
 from models.admin import Admin
@@ -11,15 +12,16 @@ from flask_login import (
 )
 
 app = Flask(__name__)
-app.secret_key = "change-this-secret-key"
+app.secret_key = os.environ.get(
+    "SECRET_KEY",
+    "change-this-secret-key"
+)
 
 # ==================================================
 # Database Configuration
 # ==================================================
 
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "mysql+pymysql://guitaruser:Sahil%21123@localhost/guitar_academy"
-)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
