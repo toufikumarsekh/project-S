@@ -47,8 +47,6 @@ def load_user(user_id):
 
 with app.app_context():
     db.create_all()
-    with app.app_context():
-    db.create_all()
 
     if not Admin.query.filter_by(username="admin").first():
         admin = Admin(
@@ -58,7 +56,6 @@ with app.app_context():
 
         db.session.add(admin)
         db.session.commit()
-
 
 # ==================================================
 # Public Routes
