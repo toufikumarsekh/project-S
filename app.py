@@ -47,6 +47,17 @@ def load_user(user_id):
 
 with app.app_context():
     db.create_all()
+    with app.app_context():
+    db.create_all()
+
+    if not Admin.query.filter_by(username="admin").first():
+        admin = Admin(
+            username="admin",
+            password="admin123"
+        )
+
+        db.session.add(admin)
+        db.session.commit()
 
 
 # ==================================================
