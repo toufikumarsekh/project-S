@@ -630,22 +630,18 @@ body{
 
     color: white;
 }
-
 .developer-credit {
-    margin-top: 10px;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    opacity: 0.9;
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .developer-credit a {
     color: #f5c542;
     text-decoration: none;
-    font-weight: 700;
-    transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .developer-credit a:hover {
     color: #ffffff;
-    text-shadow: 0 0 10px #f5c542;
 }
