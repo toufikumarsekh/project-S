@@ -24,19 +24,23 @@ body{
    NAVBAR
 ========================= */
 
+
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    background:rgba(15,23,42,0.95);
-    backdrop-filter:blur(10px);
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,0.08);
-}
+    padding:25px 8%;
 
+    background:none;
+    backdrop-filter:none;
+
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+
+    z-index:1000;
+}
 .logo a{
     color:#f59e0b;
     text-decoration:none;
@@ -59,6 +63,10 @@ body{
 
 .nav-links a:hover{
     color:#f59e0b;
+}
+.logo a,
+.nav-links a{
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
 /* =========================
